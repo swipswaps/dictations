@@ -1,0 +1,33 @@
+{
+  "name": "dictasions",
+  "description": "Experimental progressive web application for dictations.",
+  "version": "0.0.1",
+  "dependencies": {
+    "@material-ui/icons": "^1.0.0-beta.42",
+    "material-ui": "next",
+    "pico2wave.js": "0.0.1",
+    "react": "16.3.1",
+    "react-dom": "16.3.1",
+    "react-intl": "^2.4.0",
+    "react-router-dom": "^4.2.2",
+    "typeface-roboto": "0.0.54"
+  },
+  "devDependencies": {
+    "react-scripts": "1.1.4",
+    "sw-precache": "^5.2.1"
+  },
+  "scripts": {
+    "postinstall": "mkdir -p public/pico2wave && cp node_modules/pico2wave.js/dist/{pico2wave.js,pico2wave-worker.js} public/pico2wave/",
+    "start": "react-scripts start",
+    "//build": "Override sw-precache from react-scripts to increase cache max size.",
+    "build": "react-scripts build && sw-precache --config=config/sw-precache-config.js --verbose",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "author": "Birros <birros@protonmail.com>",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/birros/dictations.git"
+  }
+}

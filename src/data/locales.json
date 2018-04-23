@@ -1,0 +1,18 @@
+{
+  "en": {
+    "home.title": "Dictations",
+    "home.listItem": "Dictation #{id}",
+    "dictation.title": "Dictation #{id}",
+    "loading.button": "Start dictation",
+    "loading.message": "Dictation is being prepared",
+    "checking.info": "Good job !"
+  },
+  "fr": {
+    "home.title": "Dictées",
+    "home.listItem": "Dictée #{id}",
+    "dictation.title": "Dictée #{id}",
+    "loading.button": "Commencer la dictée",
+    "loading.message": "La dictée est en cours de préparation",
+    "checking.info": "Beau travail !"
+  }
+}

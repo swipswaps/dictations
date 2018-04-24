@@ -54,7 +54,10 @@ class Home extends React.Component {
       src: null
     });
     const text = this.props.data[key];
-    this.pico2waveWorker.postMessage(text);
+    this.pico2waveWorker.postMessage({
+      lang: "fr-FR",
+      text: text
+    });
   }
 
   timeupdate(event) {

@@ -155,7 +155,10 @@ class Dictation extends React.Component {
     const id = Number(this.state.id) + 1;
 
     if (this.state.progress) {
-      const dictation = textToDictation(this.state.text);
+      const dictation = textToDictation({
+        lang: lang,
+        text: this.state.text
+      });
       this.pico2waveWorker.postMessage({
         lang: lang,
         text: dictation

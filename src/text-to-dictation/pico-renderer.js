@@ -1,5 +1,5 @@
 class PicoRenderer {
-  static render(sequence) {
+  static render(sequence, lang) {
     var text = "";
 
     sequence.forEach(object => {
@@ -8,7 +8,7 @@ class PicoRenderer {
           text += this.renderSentence (object);
           break;
         case "PONCTUATION":
-          text += this.renderPonctuation (object);
+          text += this.renderPonctuation (object, lang);
           break;
         case "SILENCE":
           text += this.renderSilence (object);
@@ -26,7 +26,33 @@ class PicoRenderer {
     const speed = Math.floor(object.speed * 100);
     return "<speed level='" + speed +"'>" + object.value + "</speed>";
   }
-  static renderPonctuation(object) {
+  static renderPonctuation(object, lang) {
+    switch (lang) {
+      case "en-GB":
+        return this.renderPonctuationEN(object);
+      case "fr-FR":
+        return this.renderPonctuationFR(object);
+      default:
+        break;
+    }
+  }
+  static renderPonctuationEN(object) {
+    switch (object.value) {
+      case '?':
+        return "<speed level='100'>Question mark.</speed>";
+      case '.':
+        return "<speed level='100'>Full stop.</speed>";
+      case ',':
+        return "<speed level='100'>Comma,</speed>";
+      case ';':
+        return "<speed level='100'>Semicolon;</speed>";
+      case '!':
+        return "<speed level='100'>Exclamation mark.</speed>";
+      default:
+        break;
+    }
+  }
+  static renderPonctuationFR(object) {
     switch (object.value) {
       case '?':
         return "<speed level='100'>Point d'intérogation.</speed>";

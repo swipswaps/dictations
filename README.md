@@ -1,7 +1,7 @@
 # Dictations
 
-Experimental progressive web application for dictations. Only the French
-language is currently supported.
+Experimental progressive web application for dictations. Only the English and
+French languages are currently supported.
 
 ## Disclaimer & contributions
 

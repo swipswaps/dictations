@@ -1,15 +1,25 @@
 {
   "en": {
+    "lang.en-GB": "english",
+    "lang.fr-FR": "french",
+    "lang.uknown": "unknown language",
     "home.title": "Dictations",
-    "home.listItem": "Dictation #{id}",
+    "home.listItem": "Dictations in {lang}",
+    "list.title": "Dictations",
+    "list.listItem": "Dictation #{id}",
     "dictation.title": "Dictation #{id}",
     "loading.button": "Start dictation",
     "loading.message": "Dictation is being prepared",
     "checking.info": "Good job !"
   },
   "fr": {
+    "lang.en-GB": "anglais",
+    "lang.fr-FR": "français",
+    "lang.uknown": "langue inconnue",
     "home.title": "Dictées",
-    "home.listItem": "Dictée #{id}",
+    "home.listItem": "Dictées en {lang}",
+    "list.title": "Dictées en {lang}",
+    "list.listItem": "Dictée #{id}",
     "dictation.title": "Dictée #{id}",
     "loading.button": "Commencer la dictée",
     "loading.message": "La dictée est en cours de préparation",

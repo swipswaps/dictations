@@ -78,8 +78,9 @@ class Dictation extends React.Component {
 
   static getDerivedStateFromProps(props, current_state) {
     const { match, data } = props;
+    const lang = match.params.lang;
     const id = match.params.id;
-    const text = data["fr-FR"][id];
+    const text = data[lang][id];
 
     var progress;
     var mode = current_state.mode;
@@ -149,13 +150,14 @@ class Dictation extends React.Component {
   }
 
   render () {
-    const { classes } = this.props;
+    const { classes, match } = this.props;
+    const lang = match.params.lang;
     const id = Number(this.state.id) + 1;
 
     if (this.state.progress) {
       const dictation = textToDictation(this.state.text);
       this.pico2waveWorker.postMessage({
-        lang: "fr-FR",
+        lang: lang,
         text: dictation
       });
     }
@@ -212,7 +214,7 @@ class Dictation extends React.Component {
       <div className={classes.root}>
         <AppBar position="static" color="default">
           <Toolbar>
-            <IconButton component={Link} to="/" className={classes.backButton} color="inherit">
+            <IconButton component={Link} to={"/list/" + lang} className={classes.backButton} color="inherit">
               <ArrowBackIcon />
             </IconButton>
             <Typography variant="title" color="inherit" className={classes.flex}>

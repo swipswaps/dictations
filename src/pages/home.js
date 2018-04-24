@@ -53,7 +53,7 @@ class Home extends React.Component {
       status: "progress",
       src: null
     });
-    const text = this.props.data[key];
+    const text = this.props.data["fr-FR"][key];
     this.pico2waveWorker.postMessage({
       lang: "fr-FR",
       text: text
@@ -82,7 +82,7 @@ class Home extends React.Component {
   render () {
     const { classes, data } = this.props;
     const {formatMessage} = this.props.intl;
-    const list = Object.keys(data).map((key) => {
+    const list = Object.keys(data["fr-FR"]).map((key) => {
       const current = this.state.current === key ? true : false;
       const variant = current ? this.state.status : "normal";
       const value = current ? this.state.value : 0;

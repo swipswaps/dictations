@@ -79,7 +79,7 @@ class Dictation extends React.Component {
   static getDerivedStateFromProps(props, current_state) {
     const { match, data } = props;
     const id = match.params.id;
-    const text = data[id];
+    const text = data["fr-FR"][id];
 
     var progress;
     var mode = current_state.mode;

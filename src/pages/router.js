@@ -1,7 +1,7 @@
 import "typeface-roboto";
 import React from "react";
 import PropTypes from 'prop-types';
-import { withStyles } from 'material-ui/styles';
+import { withStyles } from '@material-ui/core/styles';
 import { HashRouter, Switch, Route } from "react-router-dom";
 import Home from './home';
 import ListDictations from './list';

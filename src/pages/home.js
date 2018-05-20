@@ -1,10 +1,12 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import { withStyles } from 'material-ui/styles';
-import List, {ListItem, ListItemText} from 'material-ui/List';
-import AppBar from 'material-ui/AppBar';
-import Toolbar from 'material-ui/Toolbar';
-import Typography from 'material-ui/Typography';
+import { withStyles } from '@material-ui/core/styles';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 import { Link } from "react-router-dom";
 import {FormattedMessage, defineMessages, injectIntl, intlShape} from 'react-intl';
 import getTranslatedLanguage from "../utils/lang-messages"

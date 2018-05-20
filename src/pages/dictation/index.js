@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import { withStyles } from 'material-ui/styles';
-import AppBar from 'material-ui/AppBar';
-import Toolbar from 'material-ui/Toolbar';
-import Typography from 'material-ui/Typography';
-import IconButton from 'material-ui/IconButton';
+import { withStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import { Link } from "react-router-dom";
 import {FormattedMessage} from 'react-intl';
@@ -12,7 +12,7 @@ import pico2waveWorker from "../../utils/pico2wave-worker-singleton";
 import textToDictation from "../../text-to-dictation"
 import DictationLoading from "./loading"
 import DictationChecking from "./checking"
-import TextField from 'material-ui/TextField';
+import TextField from '@material-ui/core/TextField';
 import CheckIcon from '@material-ui/icons/Check';
 import RefreshIcon from '@material-ui/icons/Refresh';
 import Audio from "../../components/audio";

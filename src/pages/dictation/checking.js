@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import { withStyles } from 'material-ui/styles';
-import Paper from 'material-ui/Paper';
-import lightGreenColor from 'material-ui/colors/lightGreen';
-import redColor from 'material-ui/colors/red';
+import { withStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import lightGreenColor from '@material-ui/core/colors/lightGreen';
+import redColor from '@material-ui/core/colors/red';
 import {FormattedMessage} from 'react-intl';
 
 const styles = theme => {

@@ -2,6 +2,7 @@ import "typeface-roboto";
 import React from "react";
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import { HashRouter, Switch, Route } from "react-router-dom";
 import Home from './home';
 import ListDictations from './list';
@@ -22,6 +23,7 @@ function Router(props) {
   return (
     <HashRouter>
       <div className={classes.root}>
+        <CssBaseline />
         <Switch>
           <Route exact path="/" component={(props) => (<Home {...props} data={dictationsData} />)}/>
           <Route path="/list/:lang" component={(props) => (<ListDictations {...props} data={dictationsData} />)}/>

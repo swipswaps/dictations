@@ -27,7 +27,7 @@ class DictationLoading extends React.Component {
     const { classes, progress, ...otherProps } = this.props;
     const message = progress ? (
       <div className={classes.loading}>
-        <CircularProgress />
+        <CircularProgress size={24} />
         <div className={classes.loadingMessage}>
           <FormattedMessage id="loading.message" defaultMessage="Dictation is being prepared" />
         </div>

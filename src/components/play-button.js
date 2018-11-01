@@ -21,13 +21,13 @@ class PlayButton extends React.Component {
       case "progress":
         icon =
           <IconButton color="inherit">
-            <CircularProgress />
+            <CircularProgress size={24} />
           </IconButton>
         break;
       case "playing":
         icon =
           <IconButton color="inherit">
-            <CircularProgress variant="static" value={value} />
+            <CircularProgress size={24} variant="static" value={value} />
           </IconButton>
         break;
       case "restart":

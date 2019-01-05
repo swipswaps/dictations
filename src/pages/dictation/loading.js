@@ -33,7 +33,7 @@ class DictationLoading extends React.Component {
         </div>
       </div>
     ) : (
-      <Button variant="raised" color="primary" {...otherProps}>
+      <Button variant="contained" color="primary" {...otherProps}>
         <FormattedMessage id="loading.button" defaultMessage="Start dictation" />
       </Button>
     );

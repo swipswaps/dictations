@@ -1,5 +1,7 @@
 # Dictations
 
+[![CD_Image][]][CD_Link]
+
 Experimental progressive web application for dictations. Only the English and
 French languages are currently supported.
 
@@ -32,3 +34,8 @@ For a production build:
 This application is based on the Pico open source voice synthesizer for its good
 performances while keeping a reduced size, while waiting for a better
 alternative free software.
+
+<!--Links-->
+
+[CD_Image]: https://github.com/birros/dictations/workflows/CD/badge.svg
+[CD_Link]: https://github.com/birros/dictations

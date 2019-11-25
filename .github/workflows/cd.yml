@@ -21,6 +21,8 @@ jobs:
         echo $PWD
         ls
         npm ci
+        echo $PWD
+        ls
         npm run build
       env:
         CI: true

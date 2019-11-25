@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/dictations/static/js/main.693a985c.chunk.js",
+    "main.js.map": "/dictations/static/js/main.693a985c.chunk.js.map",
+    "runtime~main.js": "/dictations/static/js/runtime~main.c6a1abe1.js",
+    "runtime~main.js.map": "/dictations/static/js/runtime~main.c6a1abe1.js.map",
+    "static/css/2.527acef5.chunk.css": "/dictations/static/css/2.527acef5.chunk.css",
+    "static/js/2.d3c8d901.chunk.js": "/dictations/static/js/2.d3c8d901.chunk.js",
+    "static/js/2.d3c8d901.chunk.js.map": "/dictations/static/js/2.d3c8d901.chunk.js.map",
+    "index.html": "/dictations/index.html",
+    "precache-manifest.d4b4512b0640919d009b63f641beef76.js": "/dictations/precache-manifest.d4b4512b0640919d009b63f641beef76.js",
+    "service-worker.js": "/dictations/service-worker.js",
+    "static/css/2.527acef5.chunk.css.map": "/dictations/static/css/2.527acef5.chunk.css.map",
+    "static/media/index.css": "/dictations/static/media/roboto-latin-900italic.bc833e72.woff"
+  }
+}

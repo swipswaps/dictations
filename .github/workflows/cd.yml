@@ -19,6 +19,8 @@ jobs:
     - name: Build
       run: |
         npm ci
+        echo $PWD
+        ls
         npm run build
       env:
         CI: true

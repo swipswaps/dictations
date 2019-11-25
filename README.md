@@ -27,11 +27,6 @@ For a production build:
 
     npm run build
 
-To deploy the application, don't forget to change the value of the homepage in
-the package.json so that it matches the url of your web application:
-
-    npm run deploy
-
 ## Technical notes
 
 This application is based on the Pico open source voice synthesizer for its good
